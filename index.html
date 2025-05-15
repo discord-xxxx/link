@@ -6,59 +6,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="refresh" content="0; url=snssdk1233://webview/?timestamp=1723162177&url=https%3A%2F%2Fdiscord.gg%2FNEWD6brVam">
   <style>
-    body {
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
       background-color: #000;
       color: #fff;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: center;
-      height: 100vh;
-      margin: 0;
-      padding: 20px;
+      justify-content: center;
+    }
+
+    .container {
       text-align: center;
+      padding: 0 20px;
+      max-width: 90vw;
     }
 
     h1 {
-      font-size: 2.5em;
-      font-weight: bold;
-      margin-bottom: 30px;
+      font-size: 6vw;
+      margin-bottom: 5vh;
     }
 
     p {
-      font-size: 1.4em;
-      font-weight: 500;
-      margin: 15px 0;
-      line-height: 1.6;
+      font-size: 4.2vw;
+      margin: 2vh 0;
+      line-height: 1.4;
     }
 
     a {
       color: #1e90ff;
       text-decoration: none;
       font-weight: bold;
-      font-size: 1.4em;
       word-break: break-word;
     }
 
     a:hover {
       text-decoration: underline;
     }
+
+    @media (min-width: 600px) {
+      h1 { font-size: 24px; }
+      p, a { font-size: 18px; }
+    }
   </style>
 </head>
 <body>
-  <h1>Redirecting...</h1>
-  <p>If you are not redirected automatically,</p>
-  <p>
-    <a href="snssdk1233://webview/?timestamp=1723162177&url=https%3A%2F%2Fdiscord.gg%2FNEWD6brVam">
-      Click here to open in app
-    </a>
-  </p>
-  <p>If you still can't redirect, click this direct link:</p>
-  <p>
-    <a href="https://discord.gg/NEWD6brVam" target="_blank">
-      https://discord.gg/NEWD6brVam
-    </a>
-  </p>
+  <div class="container">
+    <h1>Redirecting...</h1>
+    <p>If you are not redirected automatically,</p>
+    <p>
+      <a href="snssdk1233://webview/?timestamp=1723162177&url=https%3A%2F%2Fdiscord.gg%2FNEWD6brVam">
+        Click here to open in app
+      </a>
+    </p>
+    <p>If you still can't redirect, click this direct link:</p>
+    <p>
+      <a href="https://discord.gg/NEWD6brVam" target="_blank">
+        https://discord.gg/NEWD6brVam
+      </a>
+    </p>
+  </div>
 </body>
 </html>
