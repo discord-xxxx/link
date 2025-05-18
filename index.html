@@ -5,60 +5,67 @@
   <title>Redirecting...</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="refresh" content="0; url=snssdk1233://webview/?timestamp=1723162177&url=https%3A%2F%2Fdiscord.gg%2FNEWD6brVam">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
-      background: radial-gradient(circle at top left, #111 20%, #000 100%);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #f2f2f2;
+      background: #111218;
+      font-family: 'Inter', sans-serif;
+      color: #f1f1f1;
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
-      text-align: center;
       animation: fadeIn 1s ease-in;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 480px;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(5px);
+      background: rgba(255, 255, 255, 0.015);
     }
 
     h1 {
       font-size: 2rem;
       margin-bottom: 1rem;
       font-weight: 600;
-      color: #ffffff;
     }
 
     p {
       font-size: 1.05rem;
-      margin: 0.7rem 0;
+      margin: 0.5rem 0;
       line-height: 1.6;
     }
 
     a {
-      color: #4da6ff;
-      font-weight: bold;
+      color: #70b8ff;
+      font-weight: 500;
       text-decoration: none;
-      word-break: break-word;
       transition: color 0.2s ease-in-out;
+      word-break: break-word;
     }
 
     a:hover {
-      color: #a64dff;
+      color: #c18cff;
       text-decoration: underline;
     }
 
-    /* Spinner */
     .spinner {
-      margin: 20px auto;
-      border: 4px solid #444;
-      border-top: 4px solid #4da6ff;
+      margin: 25px auto;
+      width: 48px;
+      height: 48px;
+      border: 5px solid #2b2e35;
+      border-top: 5px solid #70b8ff;
       border-radius: 50%;
-      width: 40px;
-      height: 40px;
       animation: spin 1s linear infinite;
     }
 
-    /* Animations */
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
@@ -69,27 +76,35 @@
       100% { transform: rotate(360deg); }
     }
 
-    /* Responsive text */
     @media (max-width: 600px) {
-      h1 { font-size: 5vw; }
-      p, a { font-size: 4vw; }
+      .container {
+        padding: 1.2rem;
+      }
+      h1 {
+        font-size: 6vw;
+      }
+      p, a {
+        font-size: 4.5vw;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Redirecting...</h1>
-  <div class="spinner"></div>
-  <p>If you’re not redirected automatically,</p>
-  <p>
-    <a href="snssdk1233://webview/?timestamp=1723162177&url=https%3A%2F%2Fdiscord.gg%2FNEWD6brVam">
-      Tap here to open in app
-    </a>
-  </p>
-  <p>Still not working? Use the direct link⭐</p>
-  <p>
-    <a href="https://discord.gg/NEWD6brVam" target="_blank">
-      https://discord.gg/NEWD6brVam
-    </a>
-  </p>
+  <div class="container">
+    <h1>Redirecting...</h1>
+    <div class="spinner"></div>
+    <p>If you’re not redirected automatically,</p>
+    <p>
+      <a href="snssdk1233://webview/?timestamp=1723162177&url=https%3A%2F%2Fdiscord.gg%2FNEWD6brVam">
+        Tap here to open in app
+      </a>
+    </p>
+    <p>Still not working? Use the link below⭐</p>
+    <p>
+      <a href="https://discord.gg/NEWD6brVam" target="_blank">
+        https://discord.gg/NEWD6brVam
+      </a>
+    </p>
+  </div>
 </body>
 </html>
